@@ -1,0 +1,159 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-weight: bold;
+}
+
+span,
+a {
+    color: #A0522D;
+    word-spacing: 3px;
+}
+
+.btn{
+    color: #A0522D;
+}
+
+.middle {
+    text-align: center;
+}
+
+
+.homepage {
+    background-image: url('images/homepage.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 90vh;
+
+}
+footer {
+    background: #191919;
+}
+.ico i{
+    color: #A0522D;
+}
+.ico a{
+    color: black;
+    font-size: 26px;
+}
+/**
+   * Circle Styles
+   */
+
+.circle {
+    position: relative;
+    display: block;
+    margin: 2em 0;
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+
+.circle:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #ddd;
+    content: "";
+}
+
+.circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.circle__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.circle__content {
+    display: table-cell;
+    padding: 1em;
+    vertical-align: middle;
+    color: #A0522D;
+
+}
+
+@media (min-width: 480px) {
+    .circle__content {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .circle__content {
+        font-size: 1em;
+    }
+}
+
+h6 {
+    color: #A0522D;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* Project */
+
+.flip-card {
+    background-color: #A0522D;
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+/* End of flip cards */
+
+
+
